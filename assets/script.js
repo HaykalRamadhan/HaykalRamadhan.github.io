@@ -143,7 +143,7 @@ function renderCategoryFilters() {
   if (!filterContainer) return;
 
   // Every unique category in projects.js automatically becomes a filter button.
-  // This means you do not need to edit projects.html when adding a new category.
+  // This means you do not need to edit the Projects page when adding a new category.
   const categories = [
     "All",
     ...new Set(projects.map((project) => project.category)),
@@ -219,7 +219,7 @@ function unlockPageScroll() {
 function openProject(slug) {
   // On pages without the dialog, send visitors to the projects page.
   if (!projectDialog) {
-    window.location.href = `projects.html#${slug}`;
+    window.location.href = `/projects/#${encodeURIComponent(slug)}`;
     return;
   }
 

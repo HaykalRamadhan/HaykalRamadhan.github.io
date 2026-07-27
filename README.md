@@ -68,3 +68,11 @@ Then open `http://localhost:8000` in a browser.
 ## Adding more projects
 
 See `ADDING-PROJECTS.md` for the copy-ready template and step-by-step instructions.
+
+## Mouse-wheel image browsing
+
+While a project dialog is open, move the pointer over the image gallery and use the mouse wheel or a vertical touchpad gesture to move through its images. The page behind the dialog is locked so it cannot scroll accidentally. Hover over the description panel when you need to scroll a long project description.
+
+## Read-only website text
+
+Visible website copy is configured as read-only: it cannot be selected and does not show a text caret. Search, contact inputs, selects, and textareas remain editable.
