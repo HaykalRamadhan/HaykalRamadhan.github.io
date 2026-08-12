@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-  <title id="title">Third project image placeholder</title>
-  <desc id="desc">Replace this file with another image of the new project.</desc>
-  <rect width="1600" height="1000" fill="#f8f2ee"/>
-  <path d="M320 700 L600 410 L790 590 L1010 330 L1280 700 Z" fill="none" stroke="#9f2925" stroke-width="10" stroke-linejoin="round"/>
-  <circle cx="1160" cy="260" r="70" fill="none" stroke="#9f2925" stroke-width="10"/>
-  <text x="800" y="840" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#4a3c38">Replace with project image 03</text>
-</svg>

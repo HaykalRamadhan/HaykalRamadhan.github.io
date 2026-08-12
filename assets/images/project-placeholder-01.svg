@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-  <title id="title">Project cover placeholder</title>
-  <desc id="desc">Replace this file with the first image of a new project.</desc>
-  <rect width="1600" height="1000" fill="#f6eee9"/>
-  <rect x="70" y="70" width="1460" height="860" rx="32" fill="none" stroke="#9f2925" stroke-width="8" stroke-dasharray="28 22"/>
-  <text x="800" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="78" font-weight="700" fill="#9f2925">NEW PROJECT</text>
-  <text x="800" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" fill="#4a3c38">Replace with your cover image</text>
-  <text x="800" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" fill="#6c5a54">Recommended filename: project-name-01.webp</text>
-</svg>
