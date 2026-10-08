@@ -165,6 +165,49 @@ p { color: var(--muted); }
 .phone-list { display: grid; gap: 12px; }
 .phone-list span { height: 52px; border-radius: 12px; background: #e5e9e5; }
 
+.preview-kopipow-app,
+.preview-kopipow-website { background: #e3b52f; }
+.preview-kopipow-app::before,
+.preview-kopipow-website::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at 16% 20%, rgba(255,255,255,.38) 0 2px, transparent 3px), radial-gradient(circle at 82% 76%, rgba(20,63,50,.16) 0 3px, transparent 4px);
+  background-size: 42px 42px, 58px 58px;
+}
+.kopipow-phone {
+  position: relative; z-index: 2; width: 220px; min-height: 430px; padding: 15px;
+  color: #153f32; background: #173f32; border: 5px solid #173f32; border-radius: 38px;
+  box-shadow: 0 28px 60px rgba(21,63,50,.28); transform: rotate(-3deg);
+}
+.kopipow-phone-top { height: 48px; display: flex; align-items: center; justify-content: space-between; padding: 0 5px; }
+.kopipow-phone-top i { width: 38px; height: 5px; border-radius: 99px; background: #567467; }
+.kopipow-mini-logo { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px; background: #e3b52f; font-size: 10px; font-weight: 800; }
+.kopipow-app-hero { position: relative; min-height: 180px; padding: 22px 18px; overflow: hidden; border-radius: 24px; background: #f0eadc; }
+.kopipow-app-hero small { display: block; color: #66786f; font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.kopipow-app-hero strong { display: block; max-width: 110px; margin-top: 10px; font-family: "Manrope", sans-serif; font-size: 25px; line-height: 1; }
+.kopipow-app-hero span { display: block; margin-top: 12px; font-size: 12px; font-weight: 800; }
+.kopipow-app-hero b { position: absolute; right: -18px; bottom: 15px; display: grid; place-items: center; width: 105px; height: 105px; border-radius: 50%; background: #e3b52f; font: 800 20px/1 "Manrope", sans-serif; transform: rotate(8deg); }
+.kopipow-app-tabs { display: flex; gap: 7px; padding: 18px 2px 12px; }
+.kopipow-app-tabs span { flex: 1; height: 7px; border-radius: 99px; background: #719083; }
+.kopipow-app-tabs span:first-child { background: #e3b52f; }
+.kopipow-menu-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 7px; }
+.kopipow-menu-row i { height: 104px; border-radius: 14px; background: #f0eadc; }
+.kopipow-menu-row i:nth-child(2) { background: #d7dfda; }
+.kopipow-burst { position: absolute; z-index: 3; display: grid; place-items: center; border: 2px solid #153f32; color: #153f32; background: #f0eadc; font-size: 11px; font-weight: 800; letter-spacing: .08em; box-shadow: 0 12px 28px rgba(21,63,50,.16); }
+.burst-one { top: 12%; right: 11%; width: 82px; height: 82px; border-radius: 50%; transform: rotate(8deg); }
+.burst-two { bottom: 12%; left: 10%; padding: 9px 14px; border-radius: 999px; transform: rotate(-7deg); }
+
+.preview-kopipow-website { background: #d5dfd9; }
+.kopipow-browser { position: relative; z-index: 2; width: 84%; overflow: hidden; border: 7px solid #153f32; border-radius: 20px; background: #f0eadc; box-shadow: 0 28px 60px rgba(21,63,50,.24); transform: rotate(2deg); }
+.kopipow-browser-bar { height: 40px; display: flex; align-items: center; gap: 7px; padding: 0 14px; color: #9b784e; background: #153f32; }
+.kopipow-browser-bar i { width: 7px; height: 7px; border-radius: 50%; background: #e3b52f; }
+.kopipow-browser-bar span { margin-left: auto; font-size: 8px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.kopipow-web-hero { min-height: 260px; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 10px; padding: 34px; color: #f0eadc; background: #204c3b; }
+.kopipow-web-hero small { color: #e3b52f; font-size: 8px; font-weight: 800; letter-spacing: .13em; }
+.kopipow-web-hero strong { display: block; margin: 13px 0 20px; font: 800 30px/1.02 "Manrope", sans-serif; letter-spacing: -.04em; }
+.kopipow-web-hero span { display: inline-block; padding: 8px 12px; border-radius: 999px; color: #153f32; background: #e3b52f; font-size: 8px; font-weight: 800; }
+.kopipow-web-hero b { display: grid; place-items: center; aspect-ratio: 1; border-radius: 50%; color: #153f32; background: #e3b52f; font: 800 22px/1 "Manrope", sans-serif; transform: rotate(9deg); }
+.kopipow-web-strip { min-height: 54px; display: flex; align-items: center; justify-content: space-around; gap: 10px; padding: 12px; color: #153f32; background: #e3b52f; font-size: 8px; font-weight: 800; letter-spacing: .1em; }
+
 .cta-card { padding: 72px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); color: var(--ink); text-align: center; }
 .cta-card .eyebrow { color: var(--warm); }
 .cta-card h2 { max-width: 780px; margin: 0 auto 34px; }
@@ -289,6 +332,11 @@ p { color: var(--muted); }
   .project-preview, .project-card-large .project-preview, .project-preview-tall { min-height: 380px; }
   .dashboard-shell, .kanban-board, .attendance-card, .camera-window { width: 88%; }
   .phone-frame { width: 180px; height: 365px; }
+  .kopipow-phone { width: 185px; min-height: 370px; }
+  .kopipow-menu-row i { height: 75px; }
+  .kopipow-browser { width: 92%; }
+  .kopipow-web-hero { min-height: 220px; padding: 24px; }
+  .kopipow-web-hero strong { font-size: 24px; }
   .cta-card { padding: 48px 24px; }
   .footer-inner { padding: 32px 0; align-items: flex-start; flex-direction: column; }
   .footer-links { flex-wrap: wrap; }
