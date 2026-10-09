@@ -259,8 +259,12 @@ p { color: var(--muted); }
 .timeline-media-return::before { background-image: repeating-linear-gradient(45deg, transparent 0 24px, rgba(2,210,227,.09) 25px 26px); }
 .timeline-media-university { background: #211f28; }
 .timeline-media-university::before { background-image: radial-gradient(circle, rgba(255,255,255,.13) 1px, transparent 1.5px); background-size: 18px 18px; }
-.timeline-media-research { background: #122328; }
-.timeline-media-research::before { background-image: linear-gradient(90deg, transparent 49%, rgba(2,210,227,.12) 50%, transparent 51%), linear-gradient(transparent 49%, rgba(2,210,227,.12) 50%, transparent 51%); background-size: 38px 38px; }
+.timeline-media-coffee { background: #292117; }
+.timeline-media-coffee::before { background-image: radial-gradient(circle at 50% 50%, transparent 0 18px, rgba(255,255,255,.08) 19px 20px, transparent 21px); background-size: 70px 70px; }
+.timeline-media-resume { background: #172329; }
+.timeline-media-resume::before { background-image: linear-gradient(90deg, transparent 49%, rgba(2,210,227,.12) 50%, transparent 51%), linear-gradient(transparent 49%, rgba(2,210,227,.12) 50%, transparent 51%); background-size: 38px 38px; }
+.timeline-media-coffee-years { background: #261d1a; }
+.timeline-media-coffee-years::before { background-image: repeating-linear-gradient(120deg, transparent 0 30px, rgba(255,255,255,.07) 31px 32px); }
 .timeline-media-thesis { background: #24211a; }
 .timeline-media-thesis::before { background-image: repeating-linear-gradient(0deg, transparent 0 27px, rgba(255,255,255,.08) 28px 29px); }
 .timeline-media-now { background: #192127; }
