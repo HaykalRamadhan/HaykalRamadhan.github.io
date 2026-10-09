@@ -255,6 +255,8 @@ p { color: var(--muted); }
 .timeline-entry:nth-child(even) .timeline-media { grid-column: 3; grid-row: 1; }
 .timeline-media-school { background: #16252b; }
 .timeline-media-school::before { background-image: repeating-linear-gradient(115deg, transparent 0 19px, rgba(255,255,255,.07) 20px 21px); }
+.timeline-media-return { background: #20251e; }
+.timeline-media-return::before { background-image: repeating-linear-gradient(45deg, transparent 0 24px, rgba(2,210,227,.09) 25px 26px); }
 .timeline-media-university { background: #211f28; }
 .timeline-media-university::before { background-image: radial-gradient(circle, rgba(255,255,255,.13) 1px, transparent 1.5px); background-size: 18px 18px; }
 .timeline-media-research { background: #122328; }
