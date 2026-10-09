@@ -3,124 +3,231 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Haykal Fikri Ramadhan, a web designer focused on clean, responsive, and user-friendly digital experiences." />
+  <meta name="description" content="Portfolio of Haykal Fikri Ramadhan, a web designer creating clear, responsive, and user-focused digital experiences." />
   <title>Haykal Fikri Ramadhan — Web Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
   <script defer src="assets/script.js"></script>
 </head>
-<body>
+<body data-page="home">
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html" aria-label="Haykal home">
         <span class="brand-mark">HF</span>
-        <span class="brand-name">Haykal F.</span>
+        <span class="brand-copy"><span class="brand-name">Haykal F.</span><span class="brand-code">Portfolio_2026</span></span>
       </a>
-
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
-
       <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-        <a class="active" href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a class="active" data-index="01" href="index.html">Home</a>
+        <a data-index="02" href="#biography">Biography</a>
+        <a data-index="03" href="projects.html">Projects</a>
+        <a data-index="04" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero section-space">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="status-dot"></span> Available for selected projects</p>
-          <h1>I design clear, modern websites that feel effortless to use.</h1>
-          <p class="hero-text">
-            I’m Haykal, a web designer based in Tasikmalaya, Indonesia. I create responsive digital experiences that balance visual clarity, usability, and thoughtful interaction.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="projects.html">View my projects</a>
-            <a class="button button-secondary" href="contact.html">Contact me</a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal" aria-label="Abstract web design composition">
-          <div class="browser-card">
-            <div class="browser-bar">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="browser-content">
-              <div class="mock-sidebar"></div>
-              <div class="mock-main">
-                <div class="mock-heading"></div>
-                <div class="mock-subheading"></div>
-                <div class="mock-grid">
-                  <div></div><div></div><div></div><div></div>
+    <div class="stack-shell">
+      <section class="hero stack-layer" data-stack-layer aria-labelledby="hero-title">
+        <div class="stack-inner">
+          <canvas class="contour-canvas" data-contours aria-hidden="true"></canvas>
+          <div class="container">
+            <div class="hero-grid">
+              <div class="hero-copy reveal">
+                <p class="tech-label">Designer_Developer / 001</p>
+                <h1 id="hero-title"><span>Haykal Fikri</span><span class="outline">Ramadhan</span></h1>
+                <p class="hero-lead">I design and build modern digital experiences with sharp visual hierarchy, responsive systems, and interactions that feel effortless.</p>
+                <div class="hero-actions">
+                  <a class="button button-primary" href="projects.html">View project archive</a>
+                  <a class="button" href="contact.html">Start a project</a>
+                </div>
+                <div class="identity-grid" aria-label="Profile details">
+                  <div class="identity-item"><span>Base</span><strong>Tasikmalaya, ID</strong></div>
+                  <div class="identity-item"><span>Focus</span><strong>Web / UI / Frontend</strong></div>
+                  <div class="identity-item"><span>Status</span><strong>Selected projects</strong></div>
                 </div>
               </div>
+
+              <div class="hero-stage reveal" aria-label="Haykal Fikri design system monogram">
+                <div class="stage-grid"></div>
+                <div class="stage-cross"></div>
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit orbit-three"></div>
+                <div class="monogram-core">HF</div>
+                <span class="stage-tag stage-tag-one">Responsive systems</span>
+                <span class="stage-tag stage-tag-two">Clear interaction</span>
+                <span class="stage-coordinate">07°19' S / 108°13' E<br>FRAME_SYSTEM_ACTIVE</span>
+              </div>
+            </div>
+            <div class="hero-bottom">
+              <p>Available for thoughtful collaborations</p>
+              <p class="scroll-cue"><i></i> Scroll to inspect</p>
+              <p>Interface system / v2.0</p>
             </div>
           </div>
-          <div class="floating-tag tag-one">Responsive</div>
-          <div class="floating-tag tag-two">User-focused</div>
         </div>
+        <div class="stack-shade" aria-hidden="true"></div>
+      </section>
+
+      <section class="capabilities stack-layer" data-stack-layer aria-labelledby="capabilities-title">
+        <div class="stack-inner">
+          <div class="container">
+            <div class="section-kicker reveal">
+              <p class="tech-label">Core systems</p>
+              <span class="section-index">01</span>
+            </div>
+            <div class="capabilities-heading reveal">
+              <h2 id="capabilities-title">From first signal to finished interface.</h2>
+              <p>I combine visual direction, product thinking, and frontend execution to turn ideas into clear digital experiences.</p>
+            </div>
+            <div class="systems-grid">
+              <article class="system-card reveal">
+                <span class="system-number">SYS_01</span>
+                <h3>Web Design</h3>
+                <p>Responsive page systems, strong typography, and intentional layouts built around the message.</p>
+              </article>
+              <article class="system-card reveal">
+                <span class="system-number">SYS_02</span>
+                <h3>UI / UX</h3>
+                <p>Flows, prototypes, and interface decisions that make complex products easier to understand and use.</p>
+              </article>
+              <article class="system-card reveal">
+                <span class="system-number">SYS_03</span>
+                <h3>Frontend Build</h3>
+                <p>Accessible, maintainable implementation with responsive behavior and polished interaction details.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="biography" class="biography-section" aria-labelledby="biography-title">
+      <div class="container">
+        <div class="biography-header reveal">
+          <div>
+            <p class="eyebrow">Biography / 02</p>
+            <h2 id="biography-title">Two countries.<br>One evolving path.</h2>
+          </div>
+          <div class="biography-intro">
+            <p>I’m Haykal Fikri Ramadhan, a web designer and Informatics graduate from Universitas Siliwangi. My story crosses Indonesia and England: I moved to England in 2012, studied at Archbishop Holgate’s School in York, then returned to Indonesia to continue into technology and digital design.</p>
+            <p>That experience shaped how I work today—adaptable, curious, and focused on making complex ideas feel clear.</p>
+            <div class="biography-facts" aria-label="Biography summary">
+              <span><small>Journey</small><strong>Indonesia ↔ England</strong></span>
+              <span><small>Education</small><strong>Informatics</strong></span>
+              <span><small>Timeline</small><strong>2012—2026</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <ol class="timeline" aria-label="Haykal Fikri Ramadhan biography timeline">
+          <li class="timeline-entry reveal">
+            <time class="timeline-year" datetime="2012">2012</time>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <article class="timeline-copy">
+              <p class="timeline-code">MOVE_01 / ENGLAND</p>
+              <h3>A new country.<br>A wider view.</h3>
+              <p>I moved to England and began a formative chapter of adapting to a new country, culture, and way of learning.</p>
+            </article>
+            <div class="timeline-media timeline-media-england" role="img" aria-label="Placeholder for a photo from Haykal's move to England in 2012">
+              <span>Photo archive / 2012</span><b>England</b><small>Image to be added</small>
+            </div>
+          </li>
+
+          <li class="timeline-entry reveal">
+            <time class="timeline-year" datetime="2012">2012—18</time>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <article class="timeline-copy">
+              <p class="timeline-code">EDU_01 / YORK</p>
+              <h3>Archbishop<br>Holgate’s School.</h3>
+              <p>I studied at Archbishop Holgate’s School in York. Learning abroad strengthened my independence, communication, and international perspective.</p>
+            </article>
+            <div class="timeline-media timeline-media-school" role="img" aria-label="Placeholder for a photo from Archbishop Holgate's School">
+              <span>School archive / York</span><b>AHS</b><small>Image to be added</small>
+            </div>
+          </li>
+
+          <li class="timeline-entry reveal">
+            <time class="timeline-year" datetime="2018">2018</time>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <article class="timeline-copy">
+              <p class="timeline-code">EDU_02 / TASIKMALAYA</p>
+              <h3>Into<br>Informatics.</h3>
+              <p>I returned to Indonesia and began studying Informatics at Universitas Siliwangi, building a foundation in software, web systems, and data.</p>
+            </article>
+            <div class="timeline-media timeline-media-university" role="img" aria-label="Placeholder for a photo from Universitas Siliwangi">
+              <span>University archive / 2018</span><b>UNSIL</b><small>Image to be added</small>
+            </div>
+          </li>
+
+          <li class="timeline-entry reveal">
+            <time class="timeline-year" datetime="2020">2020</time>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <article class="timeline-copy">
+              <p class="timeline-code">RESEARCH_01 / WEB SECURITY</p>
+              <h3>Learning<br>by testing.</h3>
+              <p>I co-authored a study on implementing a web application firewall with the DataDome–NGINX module, exploring practical protection against web attacks.</p>
+            </article>
+            <div class="timeline-media timeline-media-research" role="img" aria-label="Placeholder for an image connected to Haykal's 2020 web security research">
+              <span>Research archive / 2020</span><b>WAF</b><small>Image to be added</small>
+            </div>
+          </li>
+
+          <li class="timeline-entry reveal">
+            <time class="timeline-year" datetime="2025">2025</time>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <article class="timeline-copy">
+              <p class="timeline-code">THESIS_01 / FORECASTING</p>
+              <h3>Data for local<br>business.</h3>
+              <p>My final research focused on forecasting UMKM sales using polynomial regression, applying data methods to a practical small-business problem.</p>
+            </article>
+            <div class="timeline-media timeline-media-thesis" role="img" aria-label="Placeholder for an image connected to Haykal's 2025 thesis">
+              <span>Thesis archive / 2025</span><b>Forecast</b><small>Image to be added</small>
+            </div>
+          </li>
+
+          <li class="timeline-entry reveal">
+            <time class="timeline-year" datetime="2026">2026</time>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <article class="timeline-copy">
+              <p class="timeline-code">NEXT_01 / GRADUATE</p>
+              <h3>Building the<br>next chapter.</h3>
+              <p>After graduating from Universitas Siliwangi, I’m bringing the full journey into responsive websites, mobile prototypes, and practical digital products—including KopiPow.</p>
+            </article>
+            <div class="timeline-media timeline-media-now" role="img" aria-label="Placeholder for a graduation or current portrait of Haykal">
+              <span>Current archive / 2026</span><b>Forward</b><small>Image to be added</small>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section class="section-space section-muted">
+    <section class="work-section" aria-labelledby="work-title">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">What I do</p>
-          <h2>Designing websites from first idea to polished interface.</h2>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card reveal">
-            <span class="card-number">01</span>
-            <h3>Web Design</h3>
-            <p>Clean page structures, strong visual hierarchy, and responsive layouts designed around your goals.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="card-number">02</span>
-            <h3>UI/UX Design</h3>
-            <p>Intuitive interfaces, user flows, wireframes, and interactive details that make products easier to use.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="card-number">03</span>
-            <h3>Frontend Build</h3>
-            <p>Lightweight, accessible, and maintainable websites built with modern HTML, CSS, and JavaScript.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-space">
-      <div class="container">
-        <div class="section-heading heading-row reveal">
           <div>
-            <p class="eyebrow">Selected work</p>
-            <h2>A few projects and digital experiences.</h2>
+            <p class="eyebrow">Selected work / 03</p>
+            <h2 id="work-title">Recent systems in motion.</h2>
           </div>
-          <a class="text-link" href="projects.html">See all projects <span>↗</span></a>
+          <div class="section-heading-side">
+            <p>Two connected expressions of the KopiPow brand: a playful mobile prototype and a public-facing brand website.</p>
+            <a class="text-link" href="projects.html">Open full archive <span>↗</span></a>
+          </div>
         </div>
 
         <div class="featured-grid">
           <a class="project-card project-card-large reveal" href="projects.html#kopipow-app">
             <div class="project-preview preview-kopipow-app">
               <div class="kopipow-phone" aria-hidden="true">
-                <div class="kopipow-phone-top">
-                  <span class="kopipow-mini-logo">KP</span>
-                  <i></i>
-                </div>
-                <div class="kopipow-app-hero">
-                  <small>Pick of the day</small>
-                  <strong>Power Latte</strong>
-                  <span>Rp 34.000</span>
-                  <b>POW</b>
-                </div>
+                <div class="kopipow-phone-top"><span class="kopipow-mini-logo">KP</span><i></i></div>
+                <div class="kopipow-app-hero"><small>Pick of the day</small><strong>Power Latte</strong><span>Rp 34.000</span><b>POW</b></div>
                 <div class="kopipow-app-tabs"><span></span><span></span><span></span></div>
                 <div class="kopipow-menu-row"><i></i><i></i><i></i></div>
               </div>
@@ -128,11 +235,8 @@
               <span class="kopipow-burst burst-two" aria-hidden="true">LOCAL</span>
             </div>
             <div class="project-meta">
-              <div>
-                <p>Mobile App &middot; React Native Prototype</p>
-                <h3>KopiPow App</h3>
-              </div>
-              <span class="arrow-circle">↗</span>
+              <div><p>Mobile App · React Native Prototype</p><h3>KopiPow App</h3></div>
+              <span class="arrow-box">↗</span>
             </div>
           </a>
 
@@ -140,47 +244,40 @@
             <div class="project-preview preview-kopipow-website">
               <div class="kopipow-browser" aria-hidden="true">
                 <div class="kopipow-browser-bar"><i></i><i></i><i></i><span>kopipow</span></div>
-                <div class="kopipow-web-hero">
-                  <div>
-                    <small>PLAYFUL OF WONDERS</small>
-                    <strong>Good coffee,<br>good company.</strong>
-                    <span>Discover our story</span>
-                  </div>
-                  <b>POW!</b>
-                </div>
+                <div class="kopipow-web-hero"><div><small>PLAYFUL OF WONDERS</small><strong>Good coffee,<br>good company.</strong><span>Discover our story</span></div><b>POW!</b></div>
                 <div class="kopipow-web-strip"><span>LOCAL BEANS</span><span>FAIR PRICES</span><span>WARM SERVICE</span></div>
               </div>
             </div>
             <div class="project-meta">
-              <div>
-                <p>Brand Website &middot; Expo Web</p>
-                <h3>KopiPow Website</h3>
-              </div>
-              <span class="arrow-circle">↗</span>
+              <div><p>Brand Website · Expo Web</p><h3>KopiPow Website</h3></div>
+              <span class="arrow-box">↗</span>
             </div>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="cta-section section-space">
+    <section class="cta-section">
       <div class="container">
         <div class="cta-card reveal">
-          <p class="eyebrow">Have a project in mind?</p>
-          <h2>Let’s create something clear, useful, and memorable.</h2>
-          <a class="button button-light" href="contact.html">Start a conversation</a>
+          <div><p class="eyebrow">Next brief / 04</p><h2>Have a digital project that needs a clear system?</h2></div>
+          <a class="button button-dark" href="contact.html">Contact me</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span data-year></span> Haykal Fikri Ramadhan.</p>
-      <div class="footer-links">
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-        <a href="mailto:haykalfikriramadhan.alt@gmail.com">Email</a>
+    <div class="footer-panel">
+      <div class="container footer-inner">
+        <div class="footer-title"><p class="tech-label">Keep building forward</p><h2>Let’s make it useful.</h2></div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a><a href="index.html#biography">Biography</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a>
+        </nav>
+        <div class="footer-foot">
+          <p>© <span data-year></span> Haykal Fikri Ramadhan. All rights reserved.</p>
+          <div class="footer-links"><a href="mailto:haykalfikriramadhan.alt@gmail.com">Email</a><a href="projects.html">Archive</a></div>
+        </div>
       </div>
     </div>
   </footer>

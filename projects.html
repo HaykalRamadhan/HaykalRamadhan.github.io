@@ -3,234 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Web design and digital product projects by Haykal Fikri Ramadhan." />
+  <meta name="description" content="Web design, mobile, and digital product projects by Haykal Fikri Ramadhan." />
   <title>Projects — Haykal Fikri Ramadhan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
   <script defer src="assets/script.js"></script>
 </head>
-<body>
+<body data-page="projects">
   <a class="skip-link" href="#main-content">Skip to content</a>
-
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Haykal home">
-        <span class="brand-mark">HF</span>
-        <span class="brand-name">Haykal F.</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-      </button>
+      <a class="brand" href="index.html" aria-label="Haykal home"><span class="brand-mark">HF</span><span class="brand-copy"><span class="brand-name">Haykal F.</span><span class="brand-code">Portfolio_2026</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a class="active" href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a data-index="01" href="index.html">Home</a><a data-index="02" href="index.html#biography">Biography</a><a class="active" data-index="03" href="projects.html">Projects</a><a data-index="04" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="page-hero section-space-small">
+    <section class="page-hero" aria-labelledby="projects-title">
+      <canvas class="contour-canvas" data-contours aria-hidden="true"></canvas>
+      <div class="page-code">ARCHIVE_SIZE / 008<br>FILTER_SYSTEM / ACTIVE<br>UPDATED / 2026</div>
       <div class="container page-hero-grid">
-        <div class="reveal">
-          <p class="eyebrow">Selected projects</p>
-          <h1>Design work shaped by clarity, function, and detail.</h1>
-        </div>
-        <p class="page-intro reveal">A collection of web interfaces, digital products, and development projects. Each project focuses on solving a practical problem through a clear user experience.</p>
+        <div class="reveal"><p class="eyebrow">Project archive / 02</p><h1 id="projects-title">Selected work.</h1></div>
+        <p class="page-intro reveal">Interfaces, prototypes, and digital products shaped by clear hierarchy, responsive behavior, and practical user needs.</p>
       </div>
     </section>
 
-    <section class="projects-section section-space-small">
+    <section class="projects-section">
       <div class="container">
         <div class="filter-bar reveal" aria-label="Project filters">
-          <button class="filter-button active" data-filter="all">All</button>
-          <button class="filter-button" data-filter="web">Web</button>
-          <button class="filter-button" data-filter="mobile">Mobile</button>
-          <button class="filter-button" data-filter="uiux">UI/UX</button>
+          <button class="filter-button active" data-filter="all" aria-pressed="true">All / 08</button>
+          <button class="filter-button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-button" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button class="filter-button" data-filter="uiux" aria-pressed="false">UI / UX</button>
         </div>
 
         <div class="projects-grid">
           <article id="kopipow-app" class="portfolio-item reveal" data-category="mobile uiux">
             <div class="project-preview preview-kopipow-app project-preview-tall">
-              <div class="kopipow-phone" aria-hidden="true">
-                <div class="kopipow-phone-top">
-                  <span class="kopipow-mini-logo">KP</span>
-                  <i></i>
-                </div>
-                <div class="kopipow-app-hero">
-                  <small>Pick of the day</small>
-                  <strong>Power Latte</strong>
-                  <span>Rp 34.000</span>
-                  <b>POW</b>
-                </div>
-                <div class="kopipow-app-tabs"><span></span><span></span><span></span></div>
-                <div class="kopipow-menu-row"><i></i><i></i><i></i></div>
-              </div>
-              <span class="kopipow-burst burst-one" aria-hidden="true">POW!</span>
-              <span class="kopipow-burst burst-two" aria-hidden="true">LOCAL</span>
+              <div class="kopipow-phone" aria-hidden="true"><div class="kopipow-phone-top"><span class="kopipow-mini-logo">KP</span><i></i></div><div class="kopipow-app-hero"><small>Pick of the day</small><strong>Power Latte</strong><span>Rp 34.000</span><b>POW</b></div><div class="kopipow-app-tabs"><span></span><span></span><span></span></div><div class="kopipow-menu-row"><i></i><i></i><i></i></div></div>
+              <span class="kopipow-burst burst-one" aria-hidden="true">POW!</span><span class="kopipow-burst burst-two" aria-hidden="true">LOCAL</span>
             </div>
-            <div class="portfolio-item-copy">
-              <p>Mobile App &middot; React Native Prototype</p>
-              <h2>KopiPow App</h2>
-              <p class="project-description">A playful Expo prototype for a local coffee brand, exploring a branded home experience, searchable menu, drink customisation, store selection, member and profile screens, plus a cart-to-checkout interface. Production backend ordering and live payments are not presented as complete.</p>
-              <div class="tag-list"><span>React Native</span><span>Expo</span><span>Mobile UI</span></div>
-            </div>
+            <div class="portfolio-item-copy"><p>Mobile App · React Native Prototype</p><h2>KopiPow App</h2><p class="project-description">A playful Expo prototype for a local coffee brand, exploring a branded home experience, searchable menu, drink customisation, store selection, member and profile screens, plus a cart-to-checkout interface. Production backend ordering and live payments are not presented as complete.</p><div class="tag-list"><span>React Native</span><span>Expo</span><span>Mobile UI</span></div></div>
           </article>
 
           <article id="kopipow-website" class="portfolio-item reveal" data-category="web uiux">
             <div class="project-preview preview-kopipow-website project-preview-tall">
-              <div class="kopipow-browser" aria-hidden="true">
-                <div class="kopipow-browser-bar"><i></i><i></i><i></i><span>kopipow</span></div>
-                <div class="kopipow-web-hero">
-                  <div>
-                    <small>PLAYFUL OF WONDERS</small>
-                    <strong>Good coffee,<br>good company.</strong>
-                    <span>Discover our story</span>
-                  </div>
-                  <b>POW!</b>
-                </div>
-                <div class="kopipow-web-strip"><span>LOCAL BEANS</span><span>FAIR PRICES</span><span>WARM SERVICE</span></div>
-              </div>
+              <div class="kopipow-browser" aria-hidden="true"><div class="kopipow-browser-bar"><i></i><i></i><i></i><span>kopipow</span></div><div class="kopipow-web-hero"><div><small>PLAYFUL OF WONDERS</small><strong>Good coffee,<br>good company.</strong><span>Discover our story</span></div><b>POW!</b></div><div class="kopipow-web-strip"><span>LOCAL BEANS</span><span>FAIR PRICES</span><span>WARM SERVICE</span></div></div>
             </div>
-            <div class="portfolio-item-copy">
-              <p>Brand Website &middot; Expo Web</p>
-              <h2>KopiPow Website</h2>
-              <p class="project-description">A responsive bilingual website that introduces KopiPow&rsquo;s story and local-coffee values, with English and Indonesian pages, support contact options, downloadable legal documents, and clear account-deletion guidance.</p>
-              <div class="tag-list"><span>Expo Web</span><span>Bilingual</span><span>Responsive</span></div>
-            </div>
+            <div class="portfolio-item-copy"><p>Brand Website · Expo Web</p><h2>KopiPow Website</h2><p class="project-description">A responsive bilingual website that introduces KopiPow’s story and local-coffee values, with English and Indonesian pages, support contact options, downloadable legal documents, and clear account-deletion guidance.</p><div class="tag-list"><span>Expo Web</span><span>Bilingual</span><span>Responsive</span></div></div>
           </article>
+
           <article id="forecasting-dashboard" class="portfolio-item reveal" data-category="web uiux">
-            <div class="project-preview preview-dashboard project-preview-tall">
-              <div class="dashboard-shell">
-                <div class="dash-nav"></div>
-                <div class="dash-body">
-                  <div class="dash-top"></div>
-                  <div class="dash-chart"><span></span></div>
-                  <div class="dash-stats"><i></i><i></i><i></i></div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-item-copy">
-              <p>Web App · UI/UX</p>
-              <h2>Sales Forecasting Dashboard</h2>
-              <p class="project-description">A dashboard concept for presenting daily, weekly, and monthly sales forecasts in a clear format for small-business decision making.</p>
-              <div class="tag-list"><span>Dashboard</span><span>Data UI</span><span>Responsive</span></div>
-            </div>
+            <div class="project-preview preview-dashboard project-preview-tall"><div class="dashboard-shell"><div class="dash-nav"></div><div class="dash-body"><div class="dash-top"></div><div class="dash-chart"><span></span></div><div class="dash-stats"><i></i><i></i><i></i></div></div></div></div>
+            <div class="portfolio-item-copy"><p>Web App · UI / UX</p><h2>Sales Forecasting Dashboard</h2><p class="project-description">A dashboard concept for presenting daily, weekly, and monthly sales forecasts in a clear format for small-business decision making.</p><div class="tag-list"><span>Dashboard</span><span>Data UI</span><span>Responsive</span></div></div>
           </article>
 
           <article id="inventory-app" class="portfolio-item reveal" data-category="mobile uiux">
-            <div class="project-preview preview-inventory project-preview-tall">
-              <div class="phone-frame">
-                <div class="phone-speaker"></div>
-                <div class="phone-ui">
-                  <div class="phone-title"></div>
-                  <div class="phone-stat"></div>
-                  <div class="phone-list"><span></span><span></span><span></span></div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-item-copy">
-              <p>Mobile App · Product Design</p>
-              <h2>Inventory Management App</h2>
-              <p class="project-description">A streamlined mobile interface for tracking stock, reviewing item availability, and keeping routine inventory tasks organized.</p>
-              <div class="tag-list"><span>Mobile UI</span><span>Inventory</span><span>Flutter</span></div>
-            </div>
+            <div class="project-preview preview-inventory project-preview-tall"><div class="phone-frame"><div class="phone-speaker"></div><div class="phone-ui"><div class="phone-title"></div><div class="phone-stat"></div><div class="phone-list"><span></span><span></span><span></span></div></div></div></div>
+            <div class="portfolio-item-copy"><p>Mobile App · Product Design</p><h2>Inventory Management App</h2><p class="project-description">A streamlined mobile interface for tracking stock, reviewing item availability, and keeping routine inventory tasks organized.</p><div class="tag-list"><span>Mobile UI</span><span>Inventory</span><span>Flutter</span></div></div>
           </article>
 
           <article class="portfolio-item reveal" data-category="web uiux">
-            <div class="project-preview preview-project-management project-preview-tall">
-              <div class="kanban-board">
-                <div class="kanban-head"></div>
-                <div class="kanban-columns">
-                  <div><span></span><span></span></div>
-                  <div><span></span><span></span><span></span></div>
-                  <div><span></span></div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-item-copy">
-              <p>Web App · Interface Design</p>
-              <h2>Project Management Workspace</h2>
-              <p class="project-description">A focused workspace for organizing project stages, assigning work, and reviewing progress without unnecessary interface complexity.</p>
-              <div class="tag-list"><span>Productivity</span><span>Kanban</span><span>Web UI</span></div>
-            </div>
+            <div class="project-preview preview-project-management project-preview-tall"><div class="kanban-board"><div class="kanban-head"></div><div class="kanban-columns"><div><span></span><span></span></div><div><span></span><span></span><span></span></div><div><span></span></div></div></div></div>
+            <div class="portfolio-item-copy"><p>Web App · Interface Design</p><h2>Project Management Workspace</h2><p class="project-description">A focused workspace for organizing project stages, assigning work, and reviewing progress without unnecessary interface complexity.</p><div class="tag-list"><span>Productivity</span><span>Kanban</span><span>Web UI</span></div></div>
           </article>
 
           <article class="portfolio-item reveal" data-category="web">
-            <div class="project-preview preview-attendance project-preview-tall">
-              <div class="attendance-card">
-                <div class="attendance-nav"></div>
-                <div class="attendance-title"></div>
-                <div class="attendance-table">
-                  <span></span><span></span><span></span><span></span>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-item-copy">
-              <p>Website · Frontend</p>
-              <h2>Student Attendance Website</h2>
-              <p class="project-description">A practical attendance interface that helps staff review student records and daily status through a clear, structured layout.</p>
-              <div class="tag-list"><span>Education</span><span>Frontend</span><span>Database UI</span></div>
-            </div>
+            <div class="project-preview preview-attendance project-preview-tall"><div class="attendance-card"><div class="attendance-nav"></div><div class="attendance-title"></div><div class="attendance-table"><span></span><span></span><span></span><span></span></div></div></div>
+            <div class="portfolio-item-copy"><p>Website · Frontend</p><h2>Student Attendance Website</h2><p class="project-description">A practical attendance interface that helps staff review student records and daily status through a clear, structured layout.</p><div class="tag-list"><span>Education</span><span>Frontend</span><span>Database UI</span></div></div>
           </article>
 
           <article class="portfolio-item reveal" data-category="mobile uiux">
-            <div class="project-preview preview-notes project-preview-tall">
-              <div class="notes-stack">
-                <div class="note-card n1"></div>
-                <div class="note-card n2"></div>
-                <div class="note-card n3"></div>
-              </div>
-            </div>
-            <div class="portfolio-item-copy">
-              <p>Mobile App · UI Design</p>
-              <h2>Personal Notes App</h2>
-              <p class="project-description">A minimal note-taking experience designed around quick capture, clear organization, and distraction-free reading.</p>
-              <div class="tag-list"><span>Notes</span><span>Mobile</span><span>MVVM</span></div>
-            </div>
+            <div class="project-preview preview-notes project-preview-tall"><div class="notes-stack"><div class="note-card n1"></div><div class="note-card n2"></div><div class="note-card n3"></div></div></div>
+            <div class="portfolio-item-copy"><p>Mobile App · UI Design</p><h2>Personal Notes App</h2><p class="project-description">A minimal note-taking experience designed around quick capture, clear organization, and distraction-free reading.</p><div class="tag-list"><span>Notes</span><span>Mobile</span><span>MVVM</span></div></div>
           </article>
 
           <article class="portfolio-item reveal" data-category="web uiux">
-            <div class="project-preview preview-camera project-preview-tall">
-              <div class="camera-window">
-                <div class="camera-top"></div>
-                <div class="camera-view"><span></span></div>
-                <div class="camera-controls"><i></i><i></i><i></i></div>
-              </div>
-            </div>
-            <div class="portfolio-item-copy">
-              <p>Interactive Web · Prototype</p>
-              <h2>Browser Camera Experience</h2>
-              <p class="project-description">An interactive browser-based camera interface exploring simple controls, live preview, and a clean visual experience.</p>
-              <div class="tag-list"><span>Camera</span><span>Interactive</span><span>JavaScript</span></div>
-            </div>
+            <div class="project-preview preview-camera project-preview-tall"><div class="camera-window"><div class="camera-top"></div><div class="camera-view"><span></span></div><div class="camera-controls"><i></i><i></i><i></i></div></div></div>
+            <div class="portfolio-item-copy"><p>Interactive Web · Prototype</p><h2>Browser Camera Experience</h2><p class="project-description">An interactive browser-based camera interface exploring simple controls, live preview, and a clean visual experience.</p><div class="tag-list"><span>Camera</span><span>Interactive</span><span>JavaScript</span></div></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="cta-section section-space">
-      <div class="container">
-        <div class="cta-card reveal">
-          <p class="eyebrow">Your project could be next</p>
-          <h2>Need a professional website or digital interface?</h2>
-          <a class="button button-light" href="contact.html">Contact me</a>
-        </div>
-      </div>
-    </section>
+    <section class="cta-section"><div class="container"><div class="cta-card reveal"><div><p class="eyebrow">New collaboration / 03</p><h2>Need a digital interface with a stronger signal?</h2></div><a class="button button-dark" href="contact.html">Start a conversation</a></div></div></section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span data-year></span> Haykal Fikri Ramadhan.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="mailto:haykalfikriramadhan.alt@gmail.com">Email</a>
-      </div>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="footer-panel"><div class="container footer-inner"><div class="footer-title"><p class="tech-label">Keep building forward</p><h2>Let’s make it useful.</h2></div><nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="index.html#biography">Biography</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav><div class="footer-foot"><p>© <span data-year></span> Haykal Fikri Ramadhan. All rights reserved.</p><div class="footer-links"><a href="mailto:haykalfikriramadhan.alt@gmail.com">Email</a><a href="index.html">Home</a></div></div></div></div></footer>
 </body>
 </html>

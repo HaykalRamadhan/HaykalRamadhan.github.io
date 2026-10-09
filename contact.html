@@ -3,99 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Haykal Fikri Ramadhan for web design and frontend projects." />
+  <meta name="description" content="Contact Haykal Fikri Ramadhan for web design, UI/UX, and frontend projects." />
   <title>Contact — Haykal Fikri Ramadhan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
   <script defer src="assets/script.js"></script>
 </head>
-<body>
+<body data-page="contact">
   <a class="skip-link" href="#main-content">Skip to content</a>
-
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Haykal home">
-        <span class="brand-mark">HF</span>
-        <span class="brand-name">Haykal F.</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a class="active" href="contact.html">Contact</a>
-      </nav>
+      <a class="brand" href="index.html" aria-label="Haykal home"><span class="brand-mark">HF</span><span class="brand-copy"><span class="brand-name">Haykal F.</span><span class="brand-code">Portfolio_2026</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a data-index="01" href="index.html">Home</a><a data-index="02" href="index.html#biography">Biography</a><a data-index="03" href="projects.html">Projects</a><a class="active" data-index="04" href="contact.html">Contact</a></nav>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="contact-section section-space">
+    <section class="contact-section" aria-labelledby="contact-title">
+      <canvas class="contour-canvas" data-contours aria-hidden="true"></canvas>
       <div class="container contact-grid">
         <div class="contact-copy reveal">
-          <p class="eyebrow">Contact me</p>
-          <h1>Let’s talk about your next digital project.</h1>
-          <p>Share a little about your project, timeline, or idea. I’ll use the information to understand what you need and how I may be able to help.</p>
-
+          <p class="eyebrow">Open channel / 03</p>
+          <h1 id="contact-title">Let’s build the next system.</h1>
+          <p>Share your project, timing, or early idea. I’ll use the details to understand what you need and where design or frontend work can make the biggest difference.</p>
           <div class="contact-details">
-            <a href="mailto:haykalfikriramadhan.alt@gmail.com">
-              <span>Email</span>
-              <strong>haykalfikriramadhan.alt@gmail.com</strong>
-            </a>
-            <div>
-              <span>Location</span>
-              <strong>Tasikmalaya, West Java, Indonesia</strong>
-            </div>
-            <div>
-              <span>Availability</span>
-              <strong>Freelance and selected collaborations</strong>
-            </div>
+            <a href="mailto:haykalfikriramadhan.alt@gmail.com"><span>Direct email</span><strong>haykalfikriramadhan.alt@gmail.com</strong></a>
+            <div><span>Base coordinates</span><strong>Tasikmalaya, West Java, Indonesia</strong></div>
+            <div><span>Current status</span><strong>Freelance and selected collaborations</strong></div>
           </div>
         </div>
 
         <form class="contact-form reveal" id="contact-form">
-          <div class="form-row">
-            <label for="name">Your name</label>
-            <input id="name" name="name" type="text" autocomplete="name" placeholder="Name" required />
-          </div>
-          <div class="form-row">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required />
-          </div>
-          <div class="form-row">
-            <label for="project-type">Project type</label>
-            <select id="project-type" name="project-type" required>
-              <option value="" selected disabled>Select a project type</option>
-              <option>Portfolio website</option>
-              <option>Business website</option>
-              <option>Landing page</option>
-              <option>UI/UX design</option>
-              <option>Frontend development</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <label for="message">Project details</label>
-            <textarea id="message" name="message" rows="7" placeholder="Tell me about your goals, required pages, and preferred timeline." required></textarea>
-          </div>
-          <button class="button button-primary button-full" type="submit">Send inquiry</button>
-          <p class="form-note" id="form-note">This form opens your email application with the message prepared.</p>
+          <div class="form-row"><label for="name">01 / Your name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Name" required /></div>
+          <div class="form-row"><label for="email">02 / Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required /></div>
+          <div class="form-row"><label for="project-type">03 / Project type</label><select id="project-type" name="project-type" required><option value="" selected disabled>Select a project type</option><option>Portfolio website</option><option>Business website</option><option>Landing page</option><option>UI/UX design</option><option>Frontend development</option><option>Other</option></select></div>
+          <div class="form-row"><label for="message">04 / Project details</label><textarea id="message" name="message" rows="7" placeholder="Goals, required pages, and preferred timeline." required></textarea></div>
+          <button class="button button-primary button-full" type="submit">Prepare inquiry</button>
+          <p class="form-note" id="form-note">Your email application will open with this message prepared.</p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span data-year></span> Haykal Fikri Ramadhan.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="mailto:haykalfikriramadhan.alt@gmail.com">Email</a>
-      </div>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="footer-panel"><div class="container footer-inner"><div class="footer-title"><p class="tech-label">Keep building forward</p><h2>Let’s make it useful.</h2></div><nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="index.html#biography">Biography</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav><div class="footer-foot"><p>© <span data-year></span> Haykal Fikri Ramadhan. All rights reserved.</p><div class="footer-links"><a href="mailto:haykalfikriramadhan.alt@gmail.com">Email</a><a href="projects.html">Archive</a></div></div></div></div></footer>
 </body>
 </html>
