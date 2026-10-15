@@ -315,6 +315,7 @@ p { color: var(--muted); }
 .project-description { max-width: 650px; margin: 0 0 20px; font-size: 14px; }
 .tag-list { display: flex; gap: 7px; flex-wrap: wrap; }
 .tag-list span { padding: 7px 10px; border: 1px solid #aeb8bd; color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.project-live-link { margin-top: 24px; }
 
 .preview-kopipow-app, .preview-kopipow-website { background: #e3b52f; }
 .preview-kopipow-app::before, .preview-kopipow-website::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 16% 20%, rgba(255,255,255,.42) 0 2px, transparent 3px), radial-gradient(circle at 82% 76%, rgba(20,63,50,.2) 0 3px, transparent 4px); background-size: 42px 42px, 58px 58px; }
