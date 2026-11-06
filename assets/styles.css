@@ -71,7 +71,7 @@ img, svg, canvas { display: block; max-width: 100%; }
 .primary-nav a::before { content: attr(data-index); color: #9ba4a9; font-size: 9px; }
 .primary-nav a:hover, .primary-nav a.active { border-color: var(--ink); background: var(--ink); color: var(--white); }
 .primary-nav a:hover::before, .primary-nav a.active::before { color: var(--cyan); }
-.menu-toggle { display: none; width: 44px; height: 44px; padding: 10px; border: 1px solid var(--ink); background: transparent; }
+.menu-toggle { display: none; flex: 0 0 44px; width: 44px; height: 44px; padding: 10px; border: 1px solid var(--ink); border-radius: 0; background: transparent; }
 .menu-toggle span { display: block; height: 2px; margin: 5px 0; background: var(--ink); transition: transform .25s ease, opacity .25s ease; }
 
 .tech-label, .eyebrow {
@@ -417,11 +417,16 @@ p { color: var(--muted); }
 
 @media (max-width: 760px) {
   :root { --header-height: 70px; --gutter: 20px; }
+  /* A filtered ancestor would constrain the fixed menu to the header. */
+  .site-header { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--ice); }
+  .nav-wrap { gap: 16px; }
+  .hero-grid > *, .biography-header > *, .page-hero-grid > *, .contact-grid > *, .footer-inner > * { min-width: 0; }
+  h1, h2, h3 { overflow-wrap: anywhere; }
   .brand-code { display: none; }
   .menu-toggle { display: block; position: relative; z-index: 102; }
-  .primary-nav { position: fixed; inset: 0; z-index: 101; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 0; padding: 28px; background: var(--ink); opacity: 0; visibility: hidden; transform: translateY(-12px); transition: opacity .25s ease, visibility .25s ease, transform .25s ease; }
+  .primary-nav { position: fixed; inset: 0; height: 100vh; height: 100dvh; z-index: 101; display: flex; flex-direction: column; justify-content: safe center; align-items: stretch; gap: 0; padding: calc(var(--header-height) + 20px) 28px 28px; overflow-y: auto; overscroll-behavior: contain; background: var(--ink); opacity: 0; visibility: hidden; transform: translateY(-12px); transition: opacity .25s ease, visibility .25s ease, transform .25s ease; }
   .primary-nav.is-open { opacity: 1; visibility: visible; transform: none; }
-  .primary-nav a { min-height: 70px; justify-content: space-between; border: 0; border-bottom: 1px solid rgba(255,255,255,.18); color: var(--white); font: 700 32px/1 var(--display); }
+  .primary-nav a { flex-shrink: 0; min-height: 70px; justify-content: space-between; border: 0; border-bottom: 1px solid rgba(255,255,255,.18); color: var(--white); font: 700 32px/1 var(--display); }
   .primary-nav a::before { order: 2; color: var(--cyan); font: 700 10px/1 var(--sans); }
   .menu-toggle.is-open { border-color: var(--white); }
   .menu-toggle.is-open span { background: var(--white); }

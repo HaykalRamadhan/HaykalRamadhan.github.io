@@ -16,6 +16,9 @@ const closeMenu = () => {
 };
 
 if (menuButton && navigation) {
+  const mobileMenu = window.matchMedia('(max-width: 760px)');
+  mobileMenu.addEventListener('change', () => closeMenu());
+  window.addEventListener('pageshow', () => closeMenu());
   menuButton.addEventListener('click', () => {
     const isOpen = menuButton.classList.toggle('is-open');
     navigation.classList.toggle('is-open', isOpen);
@@ -26,7 +29,23 @@ if (menuButton && navigation) {
 
   navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeMenu();
+    if (!navigation.classList.contains('is-open')) return;
+    if (event.key === 'Escape') {
+      closeMenu();
+      menuButton.focus();
+    }
+    if (event.key === 'Tab') {
+      const controls = [menuButton, ...navigation.querySelectorAll('a')];
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
   });
 }
 
